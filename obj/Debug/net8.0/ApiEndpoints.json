@@ -1,0 +1,228 @@
+[
+  {
+    "ContainingType": "ProjectApis.Controllers.AuthenticationController",
+    "Method": "SignInAsync",
+    "RelativePath": "api/Authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BackendLibrary.DTOs.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.AuthenticationController",
+    "Method": "RefreshTokenAsync",
+    "RelativePath": "api/Authentication/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "BackendLibrary.DTOs.RefreshTokenInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.AuthenticationController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/Authentication/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "BackendLibrary.DTOs.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.ChatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Chat/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "BackendLibrary.Entities.ChatMessageModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.GeneralDepartmentController",
+    "Method": "CreateGeneralDepartment",
+    "RelativePath": "api/GeneralDepartment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createGeneralDepartment",
+        "Type": "BackendLibrary.GeneralDepartmentValidation.CreateGeneralDepartment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.GeneralDepartmentController",
+    "Method": "ShowGeneralDepartments",
+    "RelativePath": "api/GeneralDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.GeneralDepartmentController",
+    "Method": "UpdateGeneralDepartment",
+    "RelativePath": "api/GeneralDepartment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateGeneralDepartment",
+        "Type": "BackendLibrary.GeneralDepartmentValidation.UpdateGeneralDepartment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.GeneralDepartmentController",
+    "Method": "ShowSpecificGeneralDepartment",
+    "RelativePath": "api/GeneralDepartment/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.GeneralDepartmentController",
+    "Method": "DeleteGeneralDepartment",
+    "RelativePath": "api/GeneralDepartment/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.UserServicesController",
+    "Method": "UpdateUserAsync",
+    "RelativePath": "api/UserServices/user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateUser",
+        "Type": "BackendLibrary.DTOs.UpdateUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.UserServicesController",
+    "Method": "GetUserByIdAsync",
+    "RelativePath": "api/UserServices/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.UserServicesController",
+    "Method": "GetAllUsersAsync",
+    "RelativePath": "api/UserServices/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.UserServicesController",
+    "Method": "DeleteUserAsync",
+    "RelativePath": "api/UserServices/users/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectApis.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjectApis.WeatherForecast, ProjectApis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
